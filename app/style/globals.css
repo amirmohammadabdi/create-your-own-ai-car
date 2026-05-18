@@ -1,0 +1,242 @@
+:root {
+  --main-color: rgb(94, 20, 94);
+}
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+header{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0px 0px 7px 0px gray;
+}
+header h1{
+  color: var(--main-color);
+}
+header ul{
+  display: flex;
+  align-items: center;
+}
+header ul li{
+  transition: .3s;
+  margin: 5px;
+}
+header ul li:hover{
+  color: var(--main-color);
+}
+
+.home{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home h1{
+  color: var(--main-color);
+  text-shadow: 0px 3px 5px gray;
+}
+.home p{
+  margin-top: 20px;
+}
+.home .icon-div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.home .icon-div span.icons{
+  font-size: 100px;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .icon-div span.icons span{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.home .icon-div span.arrow{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 50px;
+}
+
+.home .note-box{
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid var(--main-color);
+}
+.home .note-box h2{
+  width: 100%;
+  text-align: center;
+  color: var(--main-color);
+  text-shadow: 0px 2px 4px gray;
+}
+.home .note-box ul{
+  margin-top: 20px;
+}
+.home .note-box ul strong{
+  color: var(--main-color);
+  font-size: 25px;
+}
+.home .note-box ul li{
+  list-style: decimal;
+}
+
+.login-container{
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .login-container .login-box{
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 0px 5px 0px gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container .login-box h2{
+  color: var(--main-color);
+}
+.login-container .login-box h3{
+  transition: .3s;
+  margin-top: 10px;
+}
+.login-container .login-box h3:hover{
+  color: var(--main-color);
+  transform: scale(1.03, 1.03);
+  cursor: pointer;
+}
+.login-container .login-box input{
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+  padding: 5px;
+}
+.login-container .login-box button{
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+  background: var(--main-color);
+  color: white;
+}
+.login-container .login-box .login-state{
+  width: 100%;
+  margin-top: 20px;
+  border: 1px dashed var(--main-color);
+  border-radius: 10px;
+  text-align: center;
+  color: var(--main-color);
+  padding: 5px;
+} */
+
+.card-cover{
+  padding: 10px;
+}
+.card-cover .pannel-card-options{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  background: rgb(255, 228, 255);
+  border-radius: 10px;
+}
+.card-cover .pannel-card-options span{
+  color: var(--main-color);
+  font-size: 100px;
+}
+.card-cover .pannel-card-options a{
+  width: 100%;
+  max-width: 150px;
+}
+.card-cover .pannel-card-options button{
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.path-canvas{
+  background: rgb(46, 144, 105);
+}
+.brain-canvas{
+  background: rgb(188, 188, 188);
+  margin-top: 20px;
+}
+.login-container{
+  flex-direction: column;
+}
+.login-container .btn-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container .btn-box button{
+  margin: 10px;
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  background-color: rgb(255, 203, 255);
+  cursor: pointer;
+}
+.login-container .btn-box button.selected{
+  background: var(--main-color);
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  header{
+    flex-direction: column;
+  }
+}
