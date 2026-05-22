@@ -1,6 +1,7 @@
 # 🚗 Create Your AI Car
 
 An interactive web application where you can **design, train, and test your own neural-network-powered car brain** — built entirely with **Next.js** and **TypeScript**, without using any external AI libraries.
+deployed on vercel: [link to the project](https://create-your-own-ai-car.vercel.app/)
 
 > Everything — from neurons to connections to decision-making — is implemented from scratch.
 
